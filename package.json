@@ -1,0 +1,15 @@
+{
+  "name": "repro-istanbul-zero-line-coverage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal reproduction of Istanbul source-map validation accepting an invalid line-zero position",
+  "scripts": {
+    "test": "node repro.cjs",
+    "control": "node repro.cjs --valid-only"
+  },
+  "dependencies": {
+    "istanbul-lib-coverage": "3.2.2",
+    "istanbul-lib-source-maps": "5.0.6",
+    "istanbul-lib-source-maps-v4": "npm:istanbul-lib-source-maps@4.0.0"
+  }
+}
